@@ -24,7 +24,7 @@ header p {
     font-size: 26px;
 }
 .logo {
-    width: 170px;
+    width: 370px;
     position: absolute;
     top: 25px;
     left: 40px;
@@ -32,13 +32,16 @@ header p {
 .menu {
     display: flex;
     list-style: none;
-    padding: 30px 0px;
+    padding: 40px 0px;
     margin-left: 100px;
+    position: relative;
+    font-weight: 300;
 }
 .menu li {
     padding: 0px 60px;
     color: #514646;
-    font-size: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
 }
 .menu li a {
     color: rgb(0, 0, 0);
@@ -47,7 +50,56 @@ header p {
 a {
     text-decoration: none;
     color: #000;
+}/*
+.fa-mobile {
+    color: #000;
+    font-size: 30px;
 }
+.fa-envelope-o {
+    color: #000;
+    font-size: 30px;
+}
+.drop-phone {
+    display: none;
+    width:100%;
+    height: 2000px;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.drop-phone-content {
+    margin:300px auto;
+    width:200px;
+    height: 40px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.drop-phone-content i {
+    font-size: 30px;
+    padding-left: 30px;
+}
+.networks {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.networks li:nth-child(1) {
+    font-size: 40px;
+}
+.networks li:nth-child(2) {
+    font-size: 38px;
+}
+.networks li {
+    padding: 0px 10px;
+}*/
 @media(max-width:1260px) {
     .menu li a {
         font-size: 22px;
@@ -75,6 +127,9 @@ a {
     .menu li {
         padding: 0px 20px;
     }
+    .menu {
+        margin-left: 0px;
+    }
 }
 @media(max-width:826px) {
     .menu li {
@@ -85,15 +140,18 @@ a {
     }
 }
 @media(max-width: 768px) {
+    .logo {
+        width: 200px;
+    }
     .menu {
         display: none;
-    }
+    }/*
     .hamburger-menu img {
         position: fixed;
         top:0px;
         left:20px; 
         display: none;
-    }
+    }*/
     .hamburger-menu {
         display: block;
         z-index: 7;
@@ -180,5 +238,14 @@ a {
     #menu__toggle:checked ~ .menu__box {
         visibility: visible;
         left:0;
+    }
+    .menu__box li:nth-child(2) {
+        margin-top: 50px;
+    }
+    .menu__box li a {
+        font-size: 60px;
+    }
+    .logo768 {
+        width: 500px;
     }
 }
